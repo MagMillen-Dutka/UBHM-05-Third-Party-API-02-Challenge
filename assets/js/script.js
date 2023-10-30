@@ -2,21 +2,26 @@
   // Wrap all code that interacts with the DOM in a call to jQuery to ensure that
   // the code isn't run until the browser has finished rendering all the elements
   // in the html.
+
   var localSettings = {};
   dayjs.locale(localSettings);
+
   // Wait until the DOM is fully loaded before executing the code inside the function.
   $(function () {
+
     // Get the current hour of the day using the dayjs library.
     const currentHour = dayjs().format('H');
+
   // The function below changes the color of each time block based on whether it's in the "past, present, or future" relative to the current hour.
     function timeBlocks() {
       $('.time-block').each(function() {
-        const blockHour = parseInt(this.id);
+        var blockHour = parseInt(this.id);
         $(this).toggleClass('past', blockHour < currentHour);
         $(this).toggleClass('present', blockHour === currentHour);
         $(this).toggleClass('future', blockHour > currentHour);
       });
     }
+
   // The  function below will save the user's input in a textarea to localStorage - only when the corresponding save button has been clicked.
     function textEntry() {
       $('.saveBtn').on('click', function() {
@@ -25,6 +30,7 @@
         localStorage.setItem(key, value);
       });
     }
+
    // The function below will refresh the color of each time block based on whether it's in the past(grey), present(red), or future(green) relative to the current time. 
     function refreshColor() {
       $('.time-block').each(function() {
@@ -38,6 +44,7 @@
         }
       });
     }
+
     // This will get the user input from the localStorage and set textarea values for each time block.
     $('.time-block').each(function() {
       const key = $(this).attr('id');
@@ -59,6 +66,7 @@
     timeBlocks();
     textEntry();                
     refreshColor();
+
     // This will update the time once per second for the current time once per second using setInterval() 
     // giving my beautiful diplay header a live time hours, minues and seconds coutner
     setInterval(updateTime, 1000);
