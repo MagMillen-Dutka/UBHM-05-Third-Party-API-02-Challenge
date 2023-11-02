@@ -42,10 +42,10 @@ n/a
 ## Usage
 ```
 Please find the source code located here in repository: 
-
+https://github.com/MagMillen-Dutka/UBHM-05-Third-Party-API-02-Challenge
 
 Deployed website can be found here: 
-
+https://magmillen-dutka.github.io/UBHM-05-Third-Party-API-02-Challenge/
 
 
 Screenshot:
