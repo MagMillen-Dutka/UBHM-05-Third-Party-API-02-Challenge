@@ -42,10 +42,14 @@ n/a
 ## Usage
 ```
 Please find the source code located here in repository: 
-https://github.com/MagMillen-Dutka/UBHM-04-Web-APIs-02-Challenge
+
 
 Deployed website can be found here: 
-https://magmillen-dutka.github.io/UBHM-04-Web-APIs-02-Challenge/index.html
+
+
+
+Screenshot:
+
 
 
 ```
