@@ -49,9 +49,7 @@ https://magmillen-dutka.github.io/UBHM-05-Third-Party-API-02-Challenge/
 
 
 Screenshot:
-
-![WorkScheduler](assets/images/WorkScheduler.jpeg)
-
+![WorkScheduler](https://github.com/MagMillen-Dutka/UBHM-05-Third-Party-API-02-Challenge/assets/images/WorkScheduler)
 
 
 ```
